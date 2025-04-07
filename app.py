@@ -19,7 +19,7 @@ project_data = {
 
 @app.route('/')
 def index():
-    return "ECE 461L Homework 6"
+    return jsonify(project_data) 
 
 @app.get('/checkin/<project_id>/<int:qty>')
 def checkIn_hardware(project_id, qty):
